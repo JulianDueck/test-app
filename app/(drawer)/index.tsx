@@ -1,4 +1,4 @@
-import { Image, StyleSheet } from "react-native";
+import { Button, Image, StyleSheet } from "react-native";
 
 import ParallaxScrollView from "@/components/ParallaxScrollView";
 import { Link } from "expo-router";
@@ -14,7 +14,13 @@ export default function HomeScreen() {
         />
       }
     >
-      <Link href="/screen">Go to screen</Link>
+      <Link href="/screen" asChild>
+        <Button title="Go to screen" />
+      </Link>
+
+      <Link href="/video" asChild>
+        <Button title="Go to video" />
+      </Link>
     </ParallaxScrollView>
   );
 }

@@ -42,6 +42,10 @@ export default function RootLayout() {
             name="screen"
             options={{ animation: "slide_from_right" }}
           />
+          <Stack.Screen
+            name="video"
+            options={{ animation: "slide_from_right", headerShown: false }}
+          />
         </Stack>
         <StatusBar style="auto" />
       </ThemeProvider>
